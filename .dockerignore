@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+
+# Model artifacts
+backend/truthmark_artifacts/
+backend/ai_detector_checkpoints/
+backend/models/
+backend/checkpoints/
+
+# Git
+.git
+.gitignore
+
+# Local files
+.env
+*.log
+.DS_Store
