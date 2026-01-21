@@ -11,7 +11,7 @@ const b1 = document.getElementById("b1");
 const b2 = document.getElementById("b2");
 const b3 = document.getElementById("b3");
 
-const API_URL = "http://localhost:8000/analyze-text";
+const API_URL = "https://mkmanish-truthmark-api.hf.space/analyze-text";
 
 /* Utility */
 function getWordCount(text) {
