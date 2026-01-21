@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.zip
+*.tar
+*.gz
+*.pt
+*.ckpt
+*.onnx
+node_modules/
+.git/
+.gitignore
+.env

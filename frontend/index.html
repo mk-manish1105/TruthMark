@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TruthMark — Enterprise AI Content Detection</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="grid-bg"></div>
+
+  <header class="navbar">
+    <div class="logo-section">
+      <div class="logo-icon">🔍</div>
+      <div>
+        <h1>TruthMark</h1>
+        <div class="tagline">AI Text Detection & Authenticity Analysis</div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#tech">Technology</a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mkmanish1105@gmail.com" target="_blank">Contact</a>
+      <a href="https://github.com/mk-manish1105" target="_blank">GitHub</a>
+    </nav>
+
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Detect AI-Generated Content</h2>
+
+      <p>
+        TruthMark leverages a fine-tuned RoBERTa transformer model trained on
+        both human-written and AI-generated datasets to accurately distinguish
+        AI-generated content.
+      </p>
+
+    </section>
+
+    <section class="tool">
+      <div class="input-header">
+        <div class="input-label">Enter Text to Analyze</div>
+        <div id="wordCounter" class="word-counter">
+          0 words (50-350 required)
+        </div>
+      </div>
+
+      <textarea id="textInput" placeholder="Paste your text here... (minimum 50 words, maximum 350 words)
+
+Examples:
+• Social media posts
+• Blog articles
+• Academic essays
+• Marketing content
+• Email communications"></textarea>
+
+      <div class="button-container">
+        <button id="analyzeBtn" disabled>Analyze Content</button>
+      </div>
+
+      <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <span>Analyzing your content...</span>
+      </div>
+
+      <div id="result" class="hidden">
+        <div class="badge-row">
+          <div id="badge" class="badge">🤖 AI: 0%</div>
+          <span id="confidenceText">Confidence: High</span>
+        </div>
+
+        <h3 id="verdictText">Analysis Complete</h3>
+
+        <div class="progress-container">
+          <div id="progressFill"></div>
+        </div>
+
+        <div class="breakdown">
+          <h4>📊 Detailed Breakdown</h4>
+          <ul>
+            <li>Text Repetition <span id="b1">0</span></li>
+            <li>Word Diversity <span id="b2">0</span></li>
+            <li>Sentence Structure <span id="b3">0</span></li>
+          </ul>
+        </div>
+
+        <div class="notes">
+          <p>
+            <strong>ℹ️ Note:</strong>
+            <span id="modelNote"></span>
+          </p>
+        
+          <p><strong>⚠️ Limitations:</strong></p>
+          <ul id="limitations"></ul>
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about-section">
+      <div class="about-header">
+        <h3>About TruthMark</h3>
+        <p>
+          AI-generated content detection powered by a RoBERTa-based transformer model
+          and a high-performance FastAPI backend.
+        </p>
+      </div>
+    
+      <div id="features" class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h4>RoBERTa-Based Detection</h4>
+          <p>
+            TruthMark leverages a fine-tuned RoBERTa transformer model trained on both
+            AI-generated and human-written text to accurately distinguish content origin.
+          </p>
+        </div>
+      
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h4>Real-Time Analysis</h4>
+          <p>
+            Fast inference using an optimized deep learning pipeline allows predictions
+            in real time with minimal latency.
+          </p>
+        </div>
+      
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h4>Explainable Results</h4>
+          <p>
+            Provides interpretable breakdowns using repetition patterns, vocabulary
+            richness, and sentence structure analysis.
+          </p>
+        </div>
+      
+        <div class="feature-card">
+          <div class="feature-icon">🛡️</div>
+          <h4>Production-Ready Backend</h4>
+          <p>
+            Built with FastAPI for scalable, secure, and high-performance AI inference
+            suitable for real-world deployment.
+          </p>
+        </div>
+      
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h4>Confidence-Based Scoring</h4>
+          <p>
+            Outputs calibrated probability scores indicating the likelihood of AI-generated
+            content rather than binary decisions.
+          </p>
+        </div>
+      
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h4>Easy Integration</h4>
+          <p>
+            Designed with a clean API interface for seamless integration into web apps,
+            moderation tools, and content pipelines.
+          </p>
+        </div>
+      </div>
+    
+      <div id="tech" class="tech-stack">
+        <h4>🚀 Technology Stack</h4>
+        <div class="tech-badges">
+          <div class="tech-badge">RoBERTa-base</div>
+          <div class="tech-badge">Transformers (HuggingFace)</div>
+          <div class="tech-badge">TensorFlow / Keras</div>
+          <div class="tech-badge">FastAPI</div>
+          <div class="tech-badge">Python 3.10+</div>
+          <div class="tech-badge">Scikit-learn</div>
+          <div class="tech-badge">NLP</div>
+          <div class="tech-badge">Deep Learning</div>
+          <div class="tech-badge">API-Based Inference</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      © 2026 TruthMark • AI Content Detection Platform • Built with FastAPI & Transformers
+    </p>
+    <p style="margin-top: 8px; font-size: 12px">
+      Empowering content authenticity through advanced machine learning
+    </p>
+    <br>
+    <p>
+      For Contact : mkmanish1105@gmail.com
+    </p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>

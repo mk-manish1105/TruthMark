@@ -1,0 +1,21 @@
+# Ignore virtual env
+venv/
+
+# Ignore model artifacts completely
+backend/truthmark_artifacts/
+backend/ai_detector_checkpoints/
+backend/models/
+backend/checkpoints/
+
+# Ignore ML files
+*.h5
+*.keras
+*.pt
+*.bin
+*.ckpt
+*.joblib
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
