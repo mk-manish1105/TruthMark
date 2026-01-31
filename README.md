@@ -19,7 +19,6 @@ TruthMark is an AI-powered web application that detects whether a given text is 
 
 **Model**
 - RoBERTa-base (Transformer)
-- Fine-tuned for AI vs Human classification
 
 **Backend**
 - FastAPI
