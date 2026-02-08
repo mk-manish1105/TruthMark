@@ -219,21 +219,6 @@ Dense Layer (1 unit, Sigmoid)
 - **Precision**: 94.1%
 - **Recall**: 91.6%
 
----
-
-## 📈 Breakdown Metrics
-
-1. **Perplexity Proxy (Repetition)**
-   - Measures trigram repetition patterns
-   - Higher scores indicate more repetitive text
-
-2. **Vocabulary Richness Proxy**
-   - Inverse Type-Token Ratio (TTR)
-   - Higher scores indicate less diverse vocabulary
-
-3. **Syntactic Variation Proxy**
-   - Analyzes sentence length consistency
-   - Higher scores indicate less varied structure
 
 ---
 
@@ -246,33 +231,7 @@ Dense Layer (1 unit, Sigmoid)
 - **Text Length**: Optimal for 50-350 words
 - **Language**: Currently optimized for English only
 
----
 
-## 🔮 Future Enhancements
-
-- [ ] Multi-language support
-- [ ] Batch processing API
-- [ ] Model explainability (SHAP/LIME)
-- [ ] Real-time streaming
-- [ ] Performance monitoring dashboard
-- [ ] Mobile application
-
----
-
-## 🧪 Testing
-
-### Using cURL
-```bash
-curl -X POST "http://localhost:8000/analyze-text" \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Your sample text here..."}'
-```
-
-### Using Python
-```bash
-pip install requests
-python -c "import requests; print(requests.post('http://localhost:8000/analyze-text', json={'text': 'Your text'}).json())"
-```
 
 ---
 
@@ -291,22 +250,7 @@ python -c "import requests; print(requests.post('http://localhost:8000/analyze-t
 
 ---
 
-## 🤝 Contributing
 
-Contributions welcome! Please:
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing`)
-3. Commit changes (`git commit -m 'Add feature'`)
-4. Push to branch (`git push origin feature/amazing`)
-5. Open Pull Request
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file
-
----
 
 ## 🙏 Acknowledgments
 
@@ -315,25 +259,6 @@ MIT License - see [LICENSE](LICENSE) file
 - **FastAPI** - Web framework
 - **Open Source Community**
 
----
-
-## 📞 Contact
-
-**Your Name**
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
-
----
-
-## 🌟 Support
-
-If you find this project useful, please ⭐ star the repository!
-
-[Report Bug](https://github.com/yourusername/truthmark/issues) · [Request Feature](https://github.com/yourusername/truthmark/issues)
-
----
 
 <div align="center">
 
